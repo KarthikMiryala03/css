@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Photo Gallery</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1 class="text-center my-4">Photo Gallery</h1>
+    <ul class="nav nav-tabs" id="albumTabs" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="family-tab" data-toggle="tab" href="#family" role="tab" aria-controls="family" aria-selected="true">Family</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="food-tab" data-toggle="tab" href="#food" role="tab" aria-controls="food" aria-selected="false">Food</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="scenery-tab" data-toggle="tab" href="#scenery" role="tab" aria-controls="scenery" aria-selected="false">Scenery</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="family" role="tabpanel" aria-labelledby="family-tab">
+            <div class="row mt-4">
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="thumbnail">
+                        <a href="d:\Coursevita\SD\fam2.webp" target="_blank">
+                            <img src="d:\Coursevita\SD\fam2.webp" alt="Family 1" class="img-fluid">
+                        </a>
+                        <br><br>
+                        <a href="d:\Coursevita\SD\fam3.webp" target="_blank">
+                            <img src="d:\Coursevita\SD\fam3.webp" alt="Family 1" class="img-fluid">
+                        </a>
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="food" role="tabpanel" aria-labelledby="food-tab">
+            <div class="row mt-4">
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="thumbnail">
+                        <a href="d:\Coursevita\SD\food1.webp " target="_blank">
+                            <img src="d:\Coursevita\SD\food1.webp " alt="Food 1" class="img-fluid">
+                        </a>
+                        <br><br>
+                        <a href="d:\Coursevita\SD\food2.jpg" target="_blank">
+                            <img src="d:\Coursevita\SD\food2.jpg" alt="Food 1" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="scenery" role="tabpanel" aria-labelledby="scenery-tab">
+            <div class="row mt-4">
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="thumbnail">
+                        <a href="d:\Coursevita\SD\sce1.webp" target="_blank">
+                            <img src="d:\Coursevita\SD\sce1.webp" alt="Scenery 1" class="img-fluid">
+                        </a>
+                        <br><br>
+                        <a href=" d:\Coursevita\SD\sce2.webp" target="_blank">
+                            <img src=" d:\Coursevita\SD\sce2.webp" alt="Scenery 1" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+Style.css
+
+body {
+    background-color: #f8f9fa;
+}
+
+.thumbnail {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.thumbnail img {
+    transition: transform 0.5s ease;
+}
+
+.thumbnail:hover img {
+    transform: scale(1.1);
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #007bff;
+    color: white;
+}
